@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovian Drift SOS</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+    <body>
+        <iframe id="bg-frame" src="./styles/effect.html"></iframe>
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Pilot Credentials</legend>
+                <label for="pilot-name">Pilot Name:</label>
+                <input type="text" id="pilot-name" name="pilot-name" placeholder="Enter Name" required>
+                <label for="access_code">Access Code:</label>
+                <input type="password" name="access_code" id="access_code" required>
+                <label for="email">Command Email:</label>
+                <input type="email" name="email" id="email" required placeholder="example@gmail.com">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Vessel Diagnostics</legend>
+                <label for="hull_damage">Hull Damage:</label>
+                <input type="number" name="hull_damage" id="hull_damage" required>
+                <label for="emergency-level">Emergency Level:</label>
+                <select name="emergency-level" id="emergency-level" required>
+                    <option value="">Select Level</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mission Log & Evidence</legend>
+                <label for="sos-message">SOS Message:</label>
+                <textarea name="sos-message" id="sos-message" rows="3"  required></textarea>
+                <div>
+                    <input type="checkbox" name="quarantine" id="quarantine" required>
+                    <label for="quarantine">I agree to quarantine protocols</label>
+                </div>
+            </fieldset>
+            <button type="submit">INITIATE TRANSMISSION</button>
+            <button type="reset">RESET SYSTEM</button>
+        </form>  
+        <script src="./scripts/launch.js"></script>
+    </body>
+</html>
+
+
