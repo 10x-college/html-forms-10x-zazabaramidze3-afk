@@ -34,13 +34,13 @@
 
             <fieldset>
                 <legend>Mission Log & Evidence</legend>
-                <label for="sos-message" style="display: grid;">SOS Message:</label>
-                <textarea name="sos-message" id="sos-message" rows="3"  readonly></textarea>
+                <label for="sos-message">SOS Message:</label>
+                <textarea name="sos-message" id="sos-message" rows="3"  required></textarea>
+                <div>
+                    <input type="checkbox" name="quarantine" id="quarantine" required>
+                    <label for="quarantine">I agree to quarantine protocols</label>
+                </div>
             </fieldset>
-            <div>
-                <input type="checkbox" name="quarantine" id="quarantine" required>
-                <label for="quarantine">I agree to quarantine protocols</label>
-            </div>
             <button type="submit">INITIATE TRANSMISSION</button>
             <button type="reset">RESET SYSTEM</button>
         </form>  
